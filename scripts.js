@@ -2,7 +2,7 @@ let textArray = ["rock", "paper", "scissors"];
 //Gets a random selection from textArray//
 function getComputerChoice() {
     let choice = textArray[Math.floor(Math.random() * textArray.length)];
-    console.log(choice);
+    return choice;
 }
 
 let computerSelection = getComputerChoice();
@@ -33,4 +33,5 @@ function playRound(playerSelection, computerSelection) {
              return result;     
     }  
 }
+
 
