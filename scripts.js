@@ -24,35 +24,37 @@ function playRound(playerSelection, computerSelection) {
         return result;
     } else if (playerSelection == "rock") {
         if (computerSelection == "paper") {
-            result = "Computer won!";
+            result = computerWin;
             alert("The computer won!");
             return result;
         } else {
-             result = "Player won";
+             result = playerWin;
              alert("You won!");
              return result;  
         } 
     } else if (playerSelection == "scissors") {
         if (computerSelection == "rock") {
-            result = "Computer won!";
+            result = computerWin;
             alert("The computer won!")
             return result;
         } else {
-            result = "Player won";
+            result = playerWin;
             alert("You won!")
             return result;
         }
     } else if (playerSelection == "paper") {
         if (computerSelection == "scissors") {
-            result = "Computer won";
+            result = computerWin;
             alert("The computer won!")
             return result;
         } else {
-            result = "Player won";
+            result = playerWin;
             alert("You won!")
             return result;
         }
     }
 }
+
+
 
 
