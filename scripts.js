@@ -27,11 +27,32 @@ function playRound(playerSelection, computerSelection) {
             result = "Computer won!";
             alert("The computer won!");
             return result;
-        } else
+        } else {
              result = "Player won";
-             alert("The player won!");
-             return result;     
-    }  
+             alert("You won!");
+             return result;  
+        } 
+    } else if (playerSelection == "scissors") {
+        if (computerSelection == "rock") {
+            result = "Computer won!";
+            alert("The computer won!")
+            return result;
+        } else {
+            result = "Player won";
+            alert("You won!")
+            return result;
+        }
+    } else if (playerSelection == "paper") {
+        if (computerSelection == "scissors") {
+            result = "Computer won";
+            alert("The computer won!")
+            return result;
+        } else {
+            result = "Player won";
+            alert("You won!")
+            return result;
+        }
+    }
 }
 
 
