@@ -1,5 +1,8 @@
 let textArray = ["rock", "paper", "scissors"];
-//Gets a random selection from textArray//
+
+//Plays a round using the player's input and computer's input//
+function playRound() {
+    //Gets a random selection from textArray//
 function getComputerChoice() {
     let choice = textArray[Math.floor(Math.random() * textArray.length)];
     return choice;
@@ -18,8 +21,6 @@ if (playerSelection === "rock") {
          alert("Invalid selection");
          prompt("Choose between rock, paper, or scissors.")
 }   
-//Plays a round using the player's input and computer's input//
-function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         result = tie;
         alert("It's a tie!");
@@ -61,7 +62,14 @@ let tie;
 let playerWin;
 let computerWin;
 
-
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playRound()
+    }
+    if (computerWin > playerWin) {
+        console.log("The computer wins!");
+    } else console.log("The player Wins!");
+}
 
 
 
