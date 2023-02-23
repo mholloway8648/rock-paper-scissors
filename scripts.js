@@ -19,7 +19,7 @@ if (playerSelection === "rock") {
 //Plays a round using the player's input and computer's input//
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
-        result = "It's a tie!";
+        result = tie;
         alert("It's a tie!");
         return result;
     } else if (playerSelection == "rock") {
@@ -54,6 +54,10 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
+
+let tie;
+let playerWin;
+let computerWin;
 
 
 
