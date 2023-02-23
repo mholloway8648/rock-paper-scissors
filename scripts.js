@@ -14,8 +14,10 @@ if (playerSelection === "rock") {
     alert("You chose paper!");
 } else if (playerSelection === "scissors") {
     alert("You chose scissors!")
-} else alert("Invalid selection");
-
+} else {
+         alert("Invalid selection");
+         prompt("Choose between rock, paper, or scissors.")
+}   
 //Plays a round using the player's input and computer's input//
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
@@ -58,6 +60,8 @@ function playRound(playerSelection, computerSelection) {
 let tie;
 let playerWin;
 let computerWin;
+
+
 
 
 
