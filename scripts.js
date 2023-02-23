@@ -22,53 +22,50 @@ if (playerSelection === "rock") {
          prompt("Choose between rock, paper, or scissors.")
 }   
     if (playerSelection === computerSelection) {
-        result = tie;
         alert("It's a tie!");
-        return result;
     } else if (playerSelection == "rock") {
         if (computerSelection == "paper") {
-            result = computerWin;
-            alert("The computer won!");
-            return result;
+            computerScore++;
+            alert("The computer won the round!");
+            return computerScore;
         } else {
-             result = playerWin;
-             alert("You won!");
-             return result;  
+             playerScore++;
+             alert("You won the round!");
+             return playerScore;  
         } 
     } else if (playerSelection == "scissors") {
         if (computerSelection == "rock") {
-            result = computerWin;
-            alert("The computer won!")
-            return result;
+            computerScore++
+            alert("The computer won the round!")
+            return computerScore;
         } else {
-            result = playerWin;
-            alert("You won!")
-            return result;
+            playerScore++;
+            alert("You won the round!")
+            return playerScore;
         }
     } else if (playerSelection == "paper") {
         if (computerSelection == "scissors") {
-            result = computerWin;
-            alert("The computer won!")
-            return result;
+            computerScore++;
+            alert("The computer won the round!")
+            return computerScore;
         } else {
-            result = playerWin;
-            alert("You won!")
-            return result;
+            playerScore++
+            alert("You won the round!")
+            playerScore;
         }
     }
 }
 
-let tie;
-let playerWin;
-let computerWin;
+let playerScore = 0;
+let computerScore = 0;
 
 function game() {
     for (let i = 0; i < 5; i++) {
         playRound()
     }
-    if (computerWin > playerWin) {
-        console.log("The computer wins!");
-    } else console.log("The player Wins!");
+    if (computerScore > playerScore) {
+        alert("The computer wins the game!");
+    } else alert("You win the game!");
 }
 
 
