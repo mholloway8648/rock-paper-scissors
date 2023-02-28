@@ -21,6 +21,7 @@ if (playerSelection === "rock") {
          alert("Invalid selection");
          prompt("Choose between rock, paper, or scissors.")
 }   
+//Determines winner of each round and keeps score//
     if (playerSelection === computerSelection) {
         alert("It's a tie!");
     } else if (playerSelection == "rock") {
@@ -58,14 +59,16 @@ if (playerSelection === "rock") {
 
 let playerScore = 0;
 let computerScore = 0;
-
+//Plays 5 rounds and determines winner of game//
 function game() {
     for (let i = 0; i < 5; i++) {
         playRound()
     }
     if (computerScore > playerScore) {
         alert("The computer wins the game!");
-    } else alert("You win the game!");
+    } else if (playerScore > computerScore) {
+        alert("You win the game!"); 
+    } else alert("It's a tie!");
 }
 
 
